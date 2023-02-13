@@ -34,7 +34,7 @@ This is implemented in `tree.pde/TreeSpanner` with the following proceedure give
 
 At the end of this process, a spanning tree is created. Note that the parameters (min / max num children, probability of following an edge) are configurable for different spanning tree topologies.
 
-##### Drawing the spanning tree
+#### Drawing the spanning tree
 Drawing the spanning tree is also semi-stochastic in that the angle between the branches is randomly chosen per node. That in mind, this sketch attempts to center longer branches visually. It does this via the following proceedure:
 
  - Sort the branches for a node by number of descendants on that branch into an `originalList`.
