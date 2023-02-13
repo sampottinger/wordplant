@@ -3,8 +3,10 @@ Visualization of a semantic network of words in a plant-like structure.
 
 <br>
 
-### Purpose
+## Purpose
 This [Processing](https://processing.org/) sketch loads an [adjacency matrix](https://en.wikipedia.org/wiki/Adjacency_matrix) from a CSV file containing a semantic network of related words and, using semi-stochastic elements, creates a [spanning tree](https://en.wikipedia.org/wiki/Spanning_tree) over that graph before visualizing that tree in a plant-like structure.
+
+<br>
 
 ## Usage
 This requires [Processing 4](https://processing.org/download). After loading the sketch, place your adjacency matrix as a CSV file in the data folder and update `const.pde/GRAPH_FILE` to point to that file. This graph must be [connected](https://en.wikipedia.org/wiki/Connectivity_%28graph_theory%29). Note that this will also require the following configuration:
@@ -13,6 +15,8 @@ This requires [Processing 4](https://processing.org/download). After loading the
  - Root node (word) for that semantic spanning tree as specified in `const.pde/ROOT_NODE`.
 
 Upon running the sketch, the result will be written to `drawing.png`.
+
+<br>
 
 ## Algorithm
 There are stochastic elements meaning that the drawing produced by this sketch will change from execution to execution. That in mind, there are two algorithms at play:
@@ -39,8 +43,12 @@ Drawing the spanning tree is also semi-stochastic in that the angle between the 
 
 Note that, along with stochastic elements in buliding the spanning tree, this proceedure may generate different trees on each execution.
 
+<br>
+
 ## License
 This code is released under the [MIT License](https://mit-license.org/) as described in the `LICENSE` file. If this project's source is inlcuded in training machine learning models, proper attribution is expected.
+
+<br>
 
 ## Open source
 This project is written in the [Processing](https://processing.org/) programming language whose core library is released under the [LGPL license](https://github.com/processing/processing4/blob/main/LICENSE.md).
